@@ -16,7 +16,6 @@ submitBtn.onclick = () => {
   allInput.forEach((d) => {
     const warnText = document.querySelector(`#${d.id}-warn`);
     if (d.required && !d.value) {
-      isValid = false;
       d.style.borderBottom = "2px solid #E53E3E";
       if (warnText) {
         warnText.textContent = "Harap isi input ini!";
@@ -36,6 +35,16 @@ submitBtn.onclick = () => {
       if (warnText) {
         warnText.textContent = "Kata sandi harus sama!";
         warnText.style.color = "#E53E3E";
+      }
+    }
+
+    if(d.type == "email" && d.value) {
+      if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(d.value)) {
+        d.style.borderBottom = "2px solid #E53E3E";
+        if (warnText) {
+          warnText.textContent = "Harap isi input ini!";
+          warnText.style.color = "#E53E3E";
+        }
       }
     }
   });
