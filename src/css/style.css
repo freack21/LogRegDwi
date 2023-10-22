@@ -303,6 +303,14 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  label, p {
+    font-size: 0.75em;
+  }
+
+  input, select {
+    font-size: 0.7em;
+  }
+  
   header {
     font-size: 1.5em;
   }
