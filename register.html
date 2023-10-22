@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Programming Individu 2 | Dwi Retno Sari</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header>Tugas <em>Programming</em> Individu 2</header>
+    <main>
+      <div class="card">
+        <h3 class="title">Registrasi</h3>
+        <form action="">
+          <div class="form-field">
+            <div class="input-group">
+              <div class="input-field">
+                <label for="username">Username :</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  placeholder="cth. dwi21"
+                />
+                <p id="username-warn" class="warn-text"></p>
+              </div>
+              <div class="input-field">
+                <label for="kata-sandi">Kata sandi :</label>
+                <input
+                  type="password"
+                  name="kata-sandi"
+                  id="kata-sandi"
+                  required
+                  placeholder="******"
+                />
+                <p id="kata-sandi-warn" class="warn-text"></p>
+                <p>Panjang kata sandi haruslah 8-20 karakter.</p>
+              </div>
+              <div class="input-field">
+                <label for="re-kata-sandi">Ulangi kata sandi :</label>
+                <input
+                  type="password"
+                  name="re-kata-sandi"
+                  id="re-kata-sandi"
+                  required
+                  placeholder="******"
+                />
+                <p id="re-kata-sandi-warn" class="warn-text"></p>
+              </div>
+              <div class="input-field-group" id="input-field-nama">
+                <div class="input-field">
+                  <label for="nama-depan">Nama depan :</label>
+                  <input
+                    type="text"
+                    name="nama-depan"
+                    id="nama-depan"
+                    required
+                    placeholder="cth. Dwi"
+                  />
+                  <p id="nama-depan-warn" class="warn-text"></p>
+                </div>
+                <div class="input-field">
+                  <label for="nama-belakang">Nama belakang :</label>
+                  <input
+                    type="text"
+                    name="nama-belakang"
+                    id="nama-belakang"
+                    required
+                    placeholder="cth. Retno Sari"
+                  />
+                  <p id="nama-belakang-warn" class="warn-text"></p>
+                </div>
+              </div>
+              <div class="input-field-group" id="input-field-mail">
+                <div class="input-field">
+                  <label for="email">Email :</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="cth. dwiretno21@gmail.com"
+                  />
+                  <p id="email-warn" class="warn-text"></p>
+                </div>
+                <div class="input-field">
+                  <label for="no-hp">HP :</label>
+                  <input
+                    type="tel"
+                    name="no-hp"
+                    id="no-hp"
+                    required
+                    placeholder="cth. 082286230830"
+                  />
+                  <p id="no-hp-warn" class="warn-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-field">
+                <label for="alamat">Alamat :</label>
+                <input
+                  type="text"
+                  name="alamat"
+                  id="alamat"
+                  required
+                  placeholder="cth. Gg. Muda"
+                />
+                <p id="alamat-warn" class="warn-text"></p>
+              </div>
+              <div class="input-field">
+                <label for="alamat-lanjutan">Alamat lanjutan :</label>
+                <input
+                  type="text"
+                  name="alamat-lanjutan"
+                  id="alamat-lanjutan"
+                  placeholder="cth. Jl. Merpati Sakit"
+                />
+                <p id="alamat-lanjutan-warn" class="warn-text"></p>
+              </div>
+              <div class="input-field-group" id="input-field-rtrw">
+                <div class="input-field">
+                  <label for="rt">RT :</label>
+                  <input
+                    type="number"
+                    name="rt"
+                    id="rt"
+                    required
+                    placeholder="cth. 01"
+                  />
+                  <p id="rt-warn" class="warn-text"></p>
+                </div>
+                <div class="input-field">
+                  <label for="rw">RW :</label>
+                  <input
+                    type="number"
+                    name="rw"
+                    id="rw"
+                    required
+                    placeholder="cth. 02"
+                  />
+                  <p id="rw-warn" class="warn-text"></p>
+                </div>
+                <div class="input-field">
+                  <label for="kelurahan">Kelurahan :</label>
+                  <input
+                    type="text"
+                    name="kelurahan"
+                    id="kelurahan"
+                    required
+                    placeholder="cth. Simpang Lama"
+                  />
+                  <p id="kelurahan-warn" class="warn-text"></p>
+                </div>
+              </div>
+              <div class="input-field-group" id="input-field-nama">
+                <div class="input-field">
+                  <label for="kecamatan">Kecamatan :</label>
+                  <input
+                    type="text"
+                    name="kecamatan"
+                    id="kecamatan"
+                    required
+                    placeholder="cth. Cakep"
+                  />
+                  <p id="kecamatan-warn" class="warn-text"></p>
+                </div>
+                <div class="input-field">
+                  <label for="kota">Kota :</label>
+                  <input
+                    type="text"
+                    name="kota"
+                    id="kota"
+                    required
+                    placeholder="cth. Pekanlama"
+                  />
+                  <p id="kota-warn" class="warn-text"></p>
+                </div>
+              </div>
+              <div class="input-field">
+                <label for="provinsi">Provinsi :</label>
+                <select name="provinsi" id="provinsi" required>
+                  <option value="">Pilih Provinsi</option>
+                  <option value="Nanggroe Aceh Darussalam">
+                    Nanggroe Aceh Darussalam
+                  </option>
+                  <option value="Sumatera Utara">Sumatera Utara</option>
+                  <option value="Sumatera Selatan">Sumatera Selatan</option>
+                  <option value="Sumatera Barat">Sumatera Barat</option>
+                  <option value="Bengkulu">Bengkulu</option>
+                  <option value="Riau">Riau</option>
+                  <option value="Kepulauan Riau">Kepulauan Riau</option>
+                  <option value="Jambi">Jambi</option>
+                  <option value="Lampung">Lampung</option>
+                  <option value="Bangka Belitung">Bangka Belitung</option>
+                  <option value="Kalimantan Barat">Kalimantan Barat</option>
+                  <option value="Kalimantan Timur">Kalimantan Timur</option>
+                  <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                  <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                  <option value="Kalimantan Utara">Kalimantan Utara</option>
+                  <option value="Banten">Banten</option>
+                  <option value="DKI Jakarta">DKI Jakarta</option>
+                  <option value="Jawa Barat">Jawa Barat</option>
+                  <option value="Jawa Tengah">Jawa Tengah</option>
+                  <option value="Daerah Istimewa Yogyakarta">
+                    Daerah Istimewa Yogyakarta
+                  </option>
+                  <option value="Jawa Timur">Jawa Timur</option>
+                  <option value="Bali">Bali</option>
+                  <option value="Nusa Tenggara Timur">
+                    Nusa Tenggara Timur
+                  </option>
+                  <option value="Nusa Tenggara Barat">
+                    Nusa Tenggara Barat
+                  </option>
+                  <option value="Gorontalo">Gorontalo</option>
+                  <option value="Sulawesi Barat">Sulawesi Barat</option>
+                  <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                  <option value="Sulawesi Utara">Sulawesi Utara</option>
+                  <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                  <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                  <option value="Maluku Utara">Maluku Utara</option>
+                  <option value="Maluku">Maluku</option>
+                  <option value="Papua Barat">Papua Barat</option>
+                  <option value="Papua">Papua</option>
+                  <option value="Papua Tengah">Papua Tengah</option>
+                  <option value="Papua Pegunungan">Papua Pegunungan</option>
+                  <option value="Papua Selatan">Papua Selatan</option>
+                  <option value="Papua Barat Daya">Papua Barat Daya</option>
+                </select>
+                <p id="provinsi-warn" class="warn-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="login.html">
+              <button type="button">Balik</button>
+            </a>
+            <button id="submit-btn" type="button">Daftar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>Made with ❤ from Dwi Retno Sari</footer>
+    <script src="src/js/register.js"></script>
+  </body>
+</html>
