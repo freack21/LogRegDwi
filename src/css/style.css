@@ -52,7 +52,7 @@ header {
   padding: 1.2rem;
   font-size: 1.8em;
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   position: sticky;
   top: 0;
   left: 0;
@@ -72,7 +72,7 @@ footer {
   color: black;
   text-align: center;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -91,6 +91,7 @@ main {
   align-items: center;
   flex-direction: row;
   background-color: white;
+  margin-bottom: 4rem;
 }
 
 .container {
@@ -301,7 +302,7 @@ main {
 
 @media screen and (max-width: 767px) {
   header {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   main {
