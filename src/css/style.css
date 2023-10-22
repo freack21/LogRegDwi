@@ -73,7 +73,8 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.8);
-  position: sticky;
+  position: fixed;
+  width: 100%;
   bottom: 0;
   left: 0;
   z-index: 999;
@@ -93,7 +94,7 @@ main {
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
