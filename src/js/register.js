@@ -42,7 +42,7 @@ submitBtn.onclick = () => {
       if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(d.value)) {
         d.style.borderBottom = "2px solid #E53E3E";
         if (warnText) {
-          warnText.textContent = "Harap isi input ini!";
+          warnText.textContent = "Harap isi dengan email yang valid!";
           warnText.style.color = "#E53E3E";
         }
       }
