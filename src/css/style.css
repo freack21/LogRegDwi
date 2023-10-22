@@ -118,8 +118,7 @@ main {
   border-radius: 8px;
   position: relative;
   border-top-left-radius: 0;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin: 4rem 0;
 }
 
 .title {
